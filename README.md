@@ -1,0 +1,1 @@
+# fxtt-mt4-strategy-checklist
