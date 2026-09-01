@@ -7,7 +7,7 @@
 
 > An interactive, on-chart checklist for confirming your trading process before you enter a trade.
 
-![Strategy Checklist on MT4](https://raw.githubusercontent.com/ForexTradingTools/fxtt-mt4-strategy-checklist/main/screenshots/strategy-checklist-mt4-featured.png)
+![Strategy Checklist on MT4](screenshots/strategy-checklist-mt4-panel.png)
 
 ## Overview
 
@@ -121,7 +121,6 @@ fxtt-mt4-strategy-checklist/
 │   └── FXTT_StrategyChecklist.mq4       # Complete self-contained MQL4 source
 ├── releases/                             # Compiled .ex4 files after release packaging
 ├── screenshots/
-│   ├── strategy-checklist-mt4-featured.png
 │   └── strategy-checklist-mt4-panel.png
 ├── LICENSE
 └── README.md
