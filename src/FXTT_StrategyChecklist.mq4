@@ -244,6 +244,7 @@ void UpdateRow(const int index, const string text)
    ObjectSetText(g_row_names[index], marker + text, g_font_size, FontName, row_color);
    ObjectSetInteger(0, g_row_names[index], OBJPROP_COLOR, row_color);
    ObjectSetInteger(0, g_row_names[index], OBJPROP_BGCOLOR, clrWhite);
+   ObjectSetInteger(0, g_row_names[index], OBJPROP_STATE, g_state[index]);
    ObjectSetInteger(0, g_row_names[index], OBJPROP_ZORDER, 3);
    if(ShowTooltips)
       ObjectSetString(0, g_row_names[index], OBJPROP_TOOLTIP, "Toggle: " + text);
