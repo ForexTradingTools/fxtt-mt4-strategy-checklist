@@ -9,6 +9,10 @@
 
 ![Strategy Checklist on MT4](screenshots/strategy-checklist-mt4-panel.png)
 
+> **Released version: 1.20.** This is the build the [product page](https://forextradingtools.eu/en/marketplace/strategy-checklist) download ships, published as the [v1.20 release](https://github.com/ForexTradingTools/fxtt-mt4-strategy-checklist/releases/tag/v1.20). Its source is [`releases/FXTT_StrategyChecklist-v1_20.mq4`](releases/FXTT_StrategyChecklist-v1_20.mq4).
+>
+> **`src/` holds 3.0, which is unreleased.** It stays unreleased until the product page is updated for it. `releases/FXTT_StrategyChecklist-v3_0-preview.ex4` is a preview build of it.
+
 ## Overview
 
 FxTT Strategy Checklist is a free MetaTrader 4 (MT4) indicator that puts your trading rules beside the price chart. Tick each rule as you work through a setup so your execution process stays visible, repeatable, and independent of memory or emotion.
@@ -34,15 +38,20 @@ The indicator is a discipline and workflow tool only. It does not place orders, 
 
 ## Installation
 
-1. Download the source file from [`src/FXTT_StrategyChecklist.mq4`](src/FXTT_StrategyChecklist.mq4), or download a compiled file from [Releases](https://github.com/ForexTradingTools/fxtt-mt4-strategy-checklist/releases) when one is published.
-2. In MT4, choose **File → Open Data Folder**.
-3. Open `MQL4/Indicators/`.
-4. Copy `FXTT_StrategyChecklist.mq4` into that folder.
-5. Open the file in MetaEditor and press **Compile**. This creates `FXTT_StrategyChecklist.ex4` beside the source.
-6. Restart MT4, or right-click the Navigator and choose **Refresh**.
-7. Find **FXTT_StrategyChecklist** under **Navigator → Indicators**, drag it onto a chart, and configure the checklist inputs.
+### Released build
 
-The repository's `releases/` directory is reserved for compiled distribution files. No binary is included in this source-ready repository until it has passed the MT4 compilation gate.
+1. Download `FXTT_StrategyChecklist.zip` from the [v1.20 release](https://github.com/ForexTradingTools/fxtt-mt4-strategy-checklist/releases/tag/v1.20) and extract `FXTT_StrategyChecklist.ex4`.
+2. In MT4, choose **File → Open Data Folder**, open `MQL4/Indicators/`, and copy the `.ex4` there.
+3. Restart MT4, or right-click the Navigator and choose **Refresh**.
+4. Find **FXTT_StrategyChecklist** under **Navigator → Indicators**, drag it onto a chart, and configure the checklist inputs.
+
+### Unreleased 3.0 from source
+
+1. Copy [`src/FXTT_StrategyChecklist.mq4`](src/FXTT_StrategyChecklist.mq4) into `MQL4/Indicators/`.
+2. Open the file in MetaEditor and press **Compile**. This creates `FXTT_StrategyChecklist.ex4` beside the source.
+3. Refresh the Navigator and attach it to a chart.
+
+The features above and the settings below describe the 3.0 source.
 
 ## Settings Reference
 
@@ -118,8 +127,11 @@ This repository's MT4 source is a native MQL4 implementation of the documented S
 ```text
 fxtt-mt4-strategy-checklist/
 ├── src/
-│   └── FXTT_StrategyChecklist.mq4       # Complete self-contained MQL4 source
-├── releases/                             # Compiled .ex4 files after release packaging
+│   └── FXTT_StrategyChecklist.mq4                 # Unreleased 3.0 source
+├── releases/
+│   ├── FXTT_StrategyChecklist-v1_20.ex4           # Released 1.20 build (ready to install)
+│   ├── FXTT_StrategyChecklist-v1_20.mq4           # Source of the released 1.20 build
+│   └── FXTT_StrategyChecklist-v3_0-preview.ex4    # Unreleased 3.0 preview build
 ├── screenshots/
 │   └── strategy-checklist-mt4-panel.png
 ├── LICENSE
@@ -128,15 +140,19 @@ fxtt-mt4-strategy-checklist/
 
 ## Version and Changelog
 
-### v3.0.0
+### v3.0 — unreleased (`src/`)
 
-- Initial public MT4 release of the Strategy Checklist indicator.
+- Not shipped until the product page covers it.
 - Added a self-contained chart-object panel with up to 20 configurable rows.
 - Added `>` section headers, persistent state, per-symbol and optional per-timeframe storage.
 - Added configurable layout, appearance, tooltips, and multi-instance `TAG` support.
 - Trading automation and broker interaction are intentionally not included.
 
 The MT4 port follows the documented v3.0 Strategy Checklist behavior from the reference implementation.
+
+### v1.20 — released
+
+- Build shipped by the product page download.
 
 ## Related FxTT Repositories
 
